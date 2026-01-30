@@ -1,0 +1,651 @@
+/* Parent Navbar */
+.parent {
+    width: 100%;
+    background-color: #fff9f9;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nav Links Flex */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual nav item */
+.h a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
+}
+
+/* Animated underline effect */
+.h a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.h a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Glow effect on hover */
+.h a:hover {
+    text-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+    background-position: 100% 0;
+}
+
+/* Main content styling */
+.main-components {
+    padding: 40px;
+}
+
+/* Example Plans Component */
+.plans {
+    background: linear-gradient(135deg, #6EE7FF, #3B82F6);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plans:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+.container {
+    background-color: #000;
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.title {
+    color: #e62429;
+    font-family: 'Impact', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 280px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #e62429;
+}
+
+.card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-name {
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+
+    .plan-navbar {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(135deg, #6a11cb, #2575fc, #00c6ff);
+  color: white;
+      padding: 20px;
+
+    }
+
+    /* Navbar Items */
+    .plan-navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      position: relative;
+    }
+
+    /* Hover Animation */
+    .plan-navbar a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: rgb(204, 0, 255);
+      left: 0;
+      bottom: 0;
+      transition: 0.3s;
+    }
+
+    .plan-navbar a:hover::after {
+      width: 100%;
+    }
+
+    .plan-navbar a:hover {
+      transform: translateY(-5px);
+      background-color: #444;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 100px 20px;
+      text-align: center;
+      font-size: 2rem;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    /* Simple Animation */
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Media Query for Mobile */
+    @media (max-width: 600px) {
+      .plan-navbar {
+        flex-direction: column;
+      }
+
+      .plan-navbar a {
+        margin: 10px 0;
+      }
+    }
+
+    /* Colors for Sections */
+    #ironman {
+      background-color: #ff4d4d;
+      color: white;
+    }
+
+    #groot {
+      background-color: #2e7d32;
+      color: white;
+    }
+
+/* Background Image Setup */
+.product-display-section {
+  padding: 40px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                    url('https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=2070'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Scrolling effect ke liye */
+  min-height: 100vh;
+}
+
+/* Cards ko row mein lane ke liye */
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card Styling */
+.single-card {
+  width: 240px;
+  background: rgba(255, 255, 255, 0.15); /* Glass look */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+}
+
+.single-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.card-img-container {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.price-tag {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.action-btn {
+  background: #68282a;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Product Detail Page Styles */
+.product-detail-container {
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.back-btn {
+  background: #ca191f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.detail-card {
+  display: flex;
+  gap: 50px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.detail-image-sec img {
+  width: 350px;
+  object-fit: contain;
+}
+
+.detail-info-sec {
+  text-align: left;
+}
+
+.detail-title {
+  font-size: 28px;
+  color: #333;
+}
+
+.detail-price {
+  font-size: 32px;
+  color: #ca191f;
+  margin: 20px 0;
+}
+
+.add-to-cart-btn {
+  background: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Mobile responsive ke liye */
+@media (max-width: 768px) {
+  .detail-card {
+    flex-direction: column;
+  }
+}
+
+.about-section {
+  padding: 80px 10%;
+  background: #000; /* Dark background for Marvel vibe */
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.marvel-title {
+  font-size: 3.5rem;
+  color: #ca191f; /* Aapka Marvel Red color */
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Team Page Styles */
+.team-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 80vh;
+}
+
+.team-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #ca191f;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-item {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  align-items: center;
+  gap: 30px;
+  transition: transform 0.2s;
+}
+
+.team-item:hover {
+  transform: scale(1.01);
+}
+
+.team-item-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.team-item-info {
+  flex: 1;
+  text-align: left;
+}
+
+.team-item-name {
+  font-size: 24px;
+  color: #ca191f;
+  margin-bottom: 10px;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.remove-btn:hover {
+  background: #cc0000;
+}
+
+.empty-team {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empty-team h3 {
+  font-size: 24px;
+  color: #666;
+}
+
+.back-to-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #ca191f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-text {
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.stat-box p {
+  color: #ca191f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-btn {
+  padding: 12px 35px;
+  background-color: #ca191f;
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.about-btn:hover {
+  background-color: white;
+  color: #ca191f;
+  transform: translateY(-5px);
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(202, 25, 31, 0.4); /* Red glow effect */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-stats {
+    justify-content: center;
+  }
+  .marvel-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Contact Section Styling */
+.contact-section {
+  background: url('https://wallpapers.com/images/featured/marvel-background-irun001n8k4w7p53.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-overlay {
+  background: rgba(0, 0, 0, 0.85); /* Darker look for Marvel vibe */
+  width: 100%;
+  height: 100%;
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  color: white;
+}
+
+.marvel-red-text {
+  color: #ca191f; /* Aapka Marvel Red color */
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hq-details p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  border-left: 5px solid #ca191f; /* Heroic border */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.input-group input, .input-group textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #333;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+  border-color: #ca191f;
+}
+
+.hero-btn {
+  width: 100%;
+  padding: 15px;
+  background: #ca191f;
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: #ca191f;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
