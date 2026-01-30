@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dhaval/static/css/main.11336744.css",
+    "main.js": "/dhaval/static/js/main.fba6f499.js",
+    "static/js/453.87c3abf6.chunk.js": "/dhaval/static/js/453.87c3abf6.chunk.js",
+    "static/media/spider.jpg": "/dhaval/static/media/spider.da5e237675cf6d43e2ca.jpg",
+    "static/media/cap1.jpg": "/dhaval/static/media/cap1.684d54bada0ad7fddd8e.jpg",
+    "static/media/thor.jpg": "/dhaval/static/media/thor.a7b3ace6a7c96fe83660.jpg",
+    "static/media/marvel.jpg": "/dhaval/static/media/marvel.6ddd59d8be31221ab311.jpg",
+    "static/media/iron.jpg": "/dhaval/static/media/iron.e92e02151141f3cfcfd4.jpg",
+    "static/media/groot.jpg": "/dhaval/static/media/groot.fe2008ca938d3e5762dd.jpg",
+    "index.html": "/dhaval/index.html",
+    "main.11336744.css.map": "/dhaval/static/css/main.11336744.css.map",
+    "main.fba6f499.js.map": "/dhaval/static/js/main.fba6f499.js.map",
+    "453.87c3abf6.chunk.js.map": "/dhaval/static/js/453.87c3abf6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11336744.css",
+    "static/js/main.fba6f499.js"
+  ]
+}
